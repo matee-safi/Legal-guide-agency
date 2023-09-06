@@ -1,0 +1,20 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  background-color: black;
+  color: antiquewhite;
+}
+
+#main {
+  height: 100vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.733)), url("../images/classroom-interior.png") no-repeat center center;
+  background-size: cover;
+}
+
+.hero {
+  height: 80vh;
+}
+
+
