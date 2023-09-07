@@ -10,7 +10,7 @@ const Contact = () => {
         <h2 className="mb-3 text-xl font-bold">Contact Us</h2>
         <div className="mb-5 flex justify-center gap-5">
           <a href="https://www.facebook.com/legalguide.edu" target="_blank"><StaticImage width={30} src="../../static/facebook.png" alt="facebook icon" /></a>
-          <a href="mailto:legalguide.edu@gmail.com" target="_blank"><StaticImage width={30} src="../../static/gmail.png" alt="gmail icon" /></a>
+          <a href="mailto:legalguide.edu@gmail.com" target="_blank"><StaticImage width={30} src="../../static/email.png" alt="gmail icon" /></a>
           <a href="https://api.whatsapp.com/send?phone=0202200820" target="_blank"><StaticImage width={30} src="../../static/whatsapp.png" alt="whatsapp icon" /></a>
         </div>
         <h2 className="mt-10 text-xl font-bold"><StaticImage src="../../static/location.png" alt="location icon" /> Our Location</h2>
