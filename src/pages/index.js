@@ -19,11 +19,11 @@ const IndexPage = () => (
       <Hero />
     </section>
     <AboutUs />
-    {/* <Services /> */}
-    {/* <Reveiws /> */}
-    {/* <OurTeam /> */}
-    {/* <Walkthrough /> */}
-    {/* <Contact /> */}
+    <Services />
+    <Reveiws />
+    <OurTeam />
+    <Walkthrough />
+    <Contact />
     <Footer />
   </>
 )
