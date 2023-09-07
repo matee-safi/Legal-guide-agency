@@ -1,9 +1,9 @@
 import * as React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 
 const NotFoundPage = () => (
   <div>
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist...</p>
+    <a href="../"><StaticImage src="../images/404-error-template-6.png.webp" quality={100} alt="Page not Found"/></a>
   </div>
 )
 
