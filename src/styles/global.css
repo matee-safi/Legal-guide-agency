@@ -19,8 +19,17 @@ body {
 
 #main {
   height: 100vh;
-  background: linear-gradient( rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.733)), url("../images/classroom-interior.png") no-repeat center center;
-  background-size: cover;
+}
+
+.background-image {
+  height: 100%;
+  width: 100%;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
 }
 
 .hero {
