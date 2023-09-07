@@ -19,14 +19,7 @@ body {
 
 #main {
   height: 100vh;
-}
-
-.background-image {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
+  background: url('../images/classroom-interior.png') no-repeat center center/cover;
 }
 
 .dark-overlay {
