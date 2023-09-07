@@ -10,22 +10,17 @@ import OurTeam from "../components/our-team";
 import Walkthrough from "../components/walkthrough";
 import Contact from "../components/contact";
 import Footer from "../components/footer"
+import { StaticImage } from "gatsby-plugin-image";
 
-import BackgroundImage from 'gatsby-background-image'
-import { graphql } from "gatsby";
-
-const IndexPage = (props) => (
+const IndexPage = () => (
   <>
     <Head />
     <section id="main">
-      <BackgroundImage className="background-image"
-        fluid={props.data.indexImage.childImageSharp.fluid}
-        >
-        <div className="dark-overlay">
-          <Nav />
-          <Hero />
-        </div>
-      </BackgroundImage>
+      <StaticImage className="background-image" src="../images/classroom-interior.png" alt="dark classic classroom" />
+      <div className="dark-overlay">
+        <Nav />
+        <Hero />
+      </div>
     </section>
     <AboutUs />
     <Services />
@@ -38,15 +33,3 @@ const IndexPage = (props) => (
 )
 
 export default IndexPage
-
-export const pageQuery = graphql `
-  query {
-    indexImage: file(relativePath: { eq: "classroom-interior.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1920, quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;
