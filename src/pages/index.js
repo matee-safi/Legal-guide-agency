@@ -10,13 +10,11 @@ import OurTeam from "../components/our-team";
 import Walkthrough from "../components/walkthrough";
 import Contact from "../components/contact";
 import Footer from "../components/footer"
-import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => (
   <>
     <Head />
     <section id="main">
-      <StaticImage className="background-image" src="../images/classroom-interior.png" alt="dark classic classroom" />
       <div className="dark-overlay">
         <Nav />
         <Hero />
