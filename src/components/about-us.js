@@ -10,7 +10,7 @@ const AboutUs = () => {
           <p className='pb-3'>At Legal Guide, we are dedicated to helping you achieve your dreams of studying abroad and exploring global opportunities. Our team of experienced advisors is here to guide you through the entire process, from selecting the right educational institution to securing scholarships and visas.</p>
           <p className='pb-3 font-bold'>Let us help you unlock a world of possibilities.</p>
         </div>
-        <StaticImage src="../images/office.webp" alt="Our Office" className="m-3 rounded" />
+        <StaticImage src="../images/office.png" alt="Our Office" className="m-3 rounded" />
       </section>
     );
 }
