@@ -19,7 +19,7 @@ body {
 
 #main {
   height: 100vh;
-  background: url('../images/classroom-interior.png') no-repeat center center/cover;
+  background: url('../images/classroom-interior.webp') no-repeat center center/cover;
 }
 
 .dark-overlay {
