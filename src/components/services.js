@@ -1,8 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Data from '../data/services.json';
 
 const Services = () => {
   const [showPopups, setShowPopups] = useState({});
+  const [isVisible, setIsVisible] = useState({});
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible((prevState) => ({
+            ...prevState,
+            [entry.target.id]: true,
+          }));
+        } else {
+          setIsVisible((prevState) => ({
+            ...prevState,
+            [entry.target.id]: false,
+          }));
+        }
+      });
+    });
+
+    const cards = document.querySelectorAll('.card');
+    cards.forEach((card) => {
+      observer.observe(card);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   const togglePopup = (id) => {
     setShowPopups((prevState) => ({
@@ -16,7 +44,11 @@ const Services = () => {
       <div className='services-container p-3'>
         <h1 className="text-4xl text-center p-10 md:text-5xl">Our Packages</h1>
         {Data.map((item) => (
-          <div key={item.id} className="card md:hidden rounded p-5 m-5 md:text-xl">
+          <div
+            key={item.id}
+            id={item.id}
+            className={`card ${isVisible[item.id] ? 'slide' : ''} md:hidden rounded p-5 m-5 md:text-xl`}
+          >
             <div className="md:text-center right">
               <h2 className="text-2xl">{item.title}</h2>
               <p>{item.description}</p>
@@ -49,7 +81,8 @@ const Services = () => {
         {Data.map((item, index) => (
           <div
             key={item.id}
-            className={`card hidden rounded md:bg-black ${
+            id={item.id}
+            className={`card ${isVisible[item.id] ? 'slide' : ''} hidden rounded md:bg-black ${
               index % 2 === 0 ? 'even' : 'odd'
             }`}
           >
