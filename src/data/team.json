@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "name": "Noor Muhammad",
+    "role": "Founder/CEO",
+    "image": "profile-placeholder.png"
+  },
+  {
+    "id": "2",
+    "name": "Tameem Sofiekhel",
+    "role": "CMO",
+    "image": "profile-placeholder.png"
+  },
+  {
+    "id": "3",
+    "name": "John doe",
+    "role": "Advisor",
+    "image": "profile-placeholder.png"
+  }
+]
