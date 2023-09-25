@@ -53,13 +53,13 @@ const Services = () => {
               index % 2 === 0 ? 'even' : 'odd'
             }`}
           >
-            <div className="relative text-black">
+            <div className="relative text-black overflow-none">
               <img
                 src={item.image}
                 alt={item.title}
-                className="rounded my-3 max-w-lg max-h-96"
+                className="rounded max-w-lg max-h-96"
               />
-              <p className="italic font-serif absolute top-3 left-0 bg-white p-2 bg-gray-700 text-2xl text-white rounded">
+              <p className="italic font-serif absolute top-0 bg-gray left-0 bg-white p-2 price-tag text-2xl text-white rounded">
                 {item.price}
               </p>
             </div>

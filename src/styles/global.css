@@ -148,6 +148,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.bg-gray {
+  background: linear-gradient(rgb(92, 91, 89), #31302f);
+}
+
 @media (min-width: 768px) {
   .nav {
     display: flex;
@@ -193,11 +197,11 @@ body {
   }
 
   .even {
-    grid-template-areas: "image details";
+    grid-template-areas: "details image";
   }
 
   .odd {
-    grid-template-areas: "details image";
+    grid-template-areas: "image details";
   }
 
   .card img {
