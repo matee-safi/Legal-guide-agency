@@ -7,7 +7,7 @@ import AboutUs from "../components/about-us"
 import Services from "../components/services";
 import Reveiws from "../components/reviews";
 import OurTeam from "../components/our-team";
-import Walkthrough from "../components/walkthrough";
+// import Walkthrough from "../components/walkthrough";
 import Contact from "../components/contact";
 import Footer from "../components/footer"
 
