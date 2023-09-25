@@ -59,7 +59,7 @@ const Services = () => {
                 alt={item.title}
                 className="rounded my-3 max-w-lg max-h-96"
               />
-              <p className="italic font-serif absolute top-3 left-0 bg-white p-2 bg-gray-700 text-2xl text-white rounded">
+              <p className="italic font-serif absolute top-3 left-0 bg-white p-2 bg-gray-600 text-2xl text-white rounded">
                 {item.price}
               </p>
             </div>
