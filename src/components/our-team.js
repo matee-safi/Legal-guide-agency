@@ -23,5 +23,5 @@ const OurTeam = () => {
     </section>
    );
 }
- 
+
 export default OurTeam;

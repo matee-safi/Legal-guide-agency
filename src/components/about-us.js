@@ -14,7 +14,7 @@ const AboutUs = () => {
             <small className="font-normal">Schedule a Free Meeting Now</small>
           </a>
         </div>
-        <StaticImage src="../images/office.png" alt="Our Office" className="m-3 rounded md:col-6" />
+        <StaticImage src="../images/office.webp" alt="Our Office" className="m-3 rounded md:col-6" />
       </section>
     );
 }
