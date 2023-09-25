@@ -24,7 +24,7 @@ const IndexPage = () => (
     <Services />
     <Reveiws />
     <OurTeam />
-    <Walkthrough />
+    {/* <Walkthrough /> */}
     <Contact />
     <Footer />
   </>

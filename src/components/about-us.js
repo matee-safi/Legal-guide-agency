@@ -9,7 +9,7 @@ const AboutUs = () => {
           <p className='pb-3'>Welcome to our scholarship and migration consultancy!</p>
           <p className='pb-3 md:my-5'>At Legal Guide, we are dedicated to helping you achieve your dreams of studying abroad and exploring global opportunities. Our team of experienced advisors is here to guide you through the entire process, from selecting the right educational institution to securing scholarships and visas.</p>
           <p className='pb-3 mb-10 font-bold'>Let us help you unlock a world of possibilities.</p>
-          <a href="#contact" class="cta-btn text-center font-bold py-2 text-xl mx-3 rounded-full">
+          <a href="#contact" className="cta-btn text-center font-bold py-2 text-xl mx-3 mb-3 rounded-full">
             Speak to our Team <br />
             <small className="font-normal">Schedule a Free Meeting Now</small>
           </a>
