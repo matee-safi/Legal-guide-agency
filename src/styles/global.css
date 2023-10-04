@@ -209,8 +209,8 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
-.bg-gray {
-  background: linear-gradient(rgb(92, 91, 89), #31302f);
+.bg-price {
+  background: goldenrod;
 }
 
 @media (min-width: 768px) {
