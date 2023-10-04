@@ -11,11 +11,6 @@ const OurTeam = () => {
             ...prevState,
             [entry.target.id]: true,
           }));
-        } else {
-          setIsVisible((prevState) => ({
-            ...prevState,
-            [entry.target.id]: false,
-          }));
         }
       });
     });
