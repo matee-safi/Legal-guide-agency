@@ -13,11 +13,6 @@ const Services = () => {
             ...prevState,
             [entry.target.id]: true,
           }));
-        } else {
-          setIsVisible((prevState) => ({
-            ...prevState,
-            [entry.target.id]: false,
-          }));
         }
       });
     });
@@ -42,7 +37,7 @@ const Services = () => {
   return (
     <section id="services">
       <div className='services-container p-3'>
-        <h1 className="text-4xl text-center p-10 md:text-5xl">Our Packages</h1>
+        <h1 className="text-4xl text-center p-10 md:text-5xl font-semibold">Our Packages</h1>
         {Data.map((item) => (
           <div
             key={item.id}
@@ -92,7 +87,7 @@ const Services = () => {
                 alt={item.title}
                 className="rounded max-w-lg max-h-96"
               />
-              <p className="italic font-serif absolute top-0 bg-gray left-0 bg-white p-2 price-tag text-2xl text-white rounded">
+              <p className="italic font-serif absolute top-0 bg-price left-0 bg-white p-2 price-tag text-2xl text-white rounded">
                 {item.price}
               </p>
             </div>

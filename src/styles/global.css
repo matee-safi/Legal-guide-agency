@@ -1,6 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
 
 html{
   scroll-behavior:smooth;
@@ -24,8 +25,20 @@ html{
 }
 
 body {
+  font-family: 'Roboto';
   background-color: black;
   color: antiquewhite;
+}
+
+p {
+  font-family: 'Roboto';
+}
+
+#whatsapp-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
 }
 
 .menu-btn {
@@ -100,11 +113,26 @@ body {
   transition: all .5s ease-in-out;
 }
 
+.card:nth-child(2n) {
+  width: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+}
+
 .slide {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-  transform: translateY(0);
+  width: auto !important;
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+  filter: blur(0) !important;
+}
+
+.team-member {
+  transform: scale(0);
+  transition: all .5s ease-in-out;
+}
+
+.pop {
+  transform: scale(1);
 }
 
 .menu-btn.open .menu-btn__burger {
@@ -181,8 +209,8 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.bg-gray {
-  background: linear-gradient(rgb(92, 91, 89), #31302f);
+.bg-price {
+  background: goldenrod;
 }
 
 @media (min-width: 768px) {
@@ -248,5 +276,15 @@ body {
 
   .requirements {
     padding-left: 2em;
+  }
+
+  .pop:nth-child(2) {
+    transition-delay: 0.2s;
+    transform: scale(1);
+  }
+
+  .pop:nth-child(3) {
+    transition-delay: .4s;
+    transform: scale(1);
   }
 }

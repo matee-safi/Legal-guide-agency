@@ -18,7 +18,7 @@ const Contact = () => {
               <div className="flex justify-center md:justify-start gap-5">
                 <a href="https://www.facebook.com/legalguide.edu" target="_blank" rel="noreferrer"><StaticImage className="hover:scale-125 transition" src="../../static/facebook.png" alt="facebook icon" /></a>
                 <a href="mailto:legalguide.edu@gmail.com" target="_blank" rel="noreferrer"><StaticImage className="hover:scale-125 transition" src="../../static/email.png" alt="gmail icon" /></a>
-                <a href="https://api.whatsapp.com/send?phone=0202200820" target="_blank" rel="noreferrer"><StaticImage className="hover:scale-125 transition" src="../../static/whatsapp.png" alt="whatsapp icon" /></a>
+                <a href="https://api.whatsapp.com/send?phone=0795284210" target="_blank" rel="noreferrer"><StaticImage className="hover:scale-125 transition" src="../../static/whatsapp.png" alt="whatsapp icon" /></a>
               </div>
             </div>
           </div>
