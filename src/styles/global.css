@@ -28,6 +28,13 @@ body {
   color: antiquewhite;
 }
 
+#whatsapp-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
 .menu-btn {
   right: 0;
   z-index: 2;
@@ -100,11 +107,26 @@ body {
   transition: all .5s ease-in-out;
 }
 
+.card:nth-child(2n) {
+  width: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+}
+
 .slide {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-  transform: translateY(0);
+  width: auto !important;
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+  filter: blur(0) !important;
+}
+
+.team-member {
+  transform: scale(0);
+  transition: all .5s ease-in-out;
+}
+
+.pop {
+  transform: scale(1);
 }
 
 .menu-btn.open .menu-btn__burger {
@@ -248,5 +270,15 @@ body {
 
   .requirements {
     padding-left: 2em;
+  }
+
+  .pop:nth-child(2) {
+    transition-delay: 0.2s;
+    transform: scale(1);
+  }
+
+  .pop:nth-child(3) {
+    transition-delay: .4s;
+    transform: scale(1);
   }
 }

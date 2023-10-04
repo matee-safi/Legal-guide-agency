@@ -57,7 +57,7 @@ const Nav = () => {
             <Link to="#services">Packages</Link>
             <Link to="#reviews" className='md:hidden'>Reviews</Link>
             <Link to="#our-team" className='md:hidden'>Our Team</Link>
-            <Link to="#walkthrough" className='md:hidden'>Walkthrough</Link>
+            {/* <Link to="#walkthrough" className='md:hidden'>Walkthrough</Link> */}
             <Link to="#contact">Contact</Link>
           </ul>
         </div>

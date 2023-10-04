@@ -45,6 +45,6 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/mortarboard.png`, // This path is relative to the root of the site.
       },
-    },
+    }
   ],
 }
