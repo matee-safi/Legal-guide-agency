@@ -28,7 +28,7 @@ const Reveiws = () => {
   return ( 
     <section id="reviews">
       <div className="reviews-container">
-        <h1 className="text-4xl md:text-5xl text-center py-5 md:mb-10">Reviews</h1>
+        <h1 className="text-4xl md:text-5xl text-center py-5 md:mb-10 font-semibold">Reviews</h1>
         <div className="grid md:grid-cols-2">
           {Data.map((item) => {
             return (
@@ -44,5 +44,5 @@ const Reveiws = () => {
     </section>
    );
 }
- 
+
 export default Reveiws;

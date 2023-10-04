@@ -37,7 +37,7 @@ const Services = () => {
   return (
     <section id="services">
       <div className='services-container p-3'>
-        <h1 className="text-4xl text-center p-10 md:text-5xl">Our Packages</h1>
+        <h1 className="text-4xl text-center p-10 md:text-5xl font-semibold">Our Packages</h1>
         {Data.map((item) => (
           <div
             key={item.id}
