@@ -54,7 +54,7 @@ const Nav = () => {
           <ul className="nav-menu flex-col md:flex-row flex p-5 gap-3 font-bold text-xl">
             <Link to="#main">Home</Link>
             <Link to="#about">About</Link>
-            <Link to="#services">Packages</Link>
+            <Link to="#services">Services</Link>
             <Link to="#reviews" className='md:hidden'>Reviews</Link>
             <Link to="#our-team" className='md:hidden'>Our Team</Link>
             {/* <Link to="#walkthrough" className='md:hidden'>Walkthrough</Link> */}

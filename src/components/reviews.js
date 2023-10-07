@@ -28,8 +28,8 @@ const Reveiws = () => {
   return ( 
     <section id="reviews">
       <div className="reviews-container">
-        <h1 className="text-4xl md:text-5xl text-center py-5 md:mb-10 font-semibold">Reviews</h1>
-        <div className="grid md:grid-cols-2">
+        <h1 className="text-4xl md:text-5xl text-center mt-10 py-5 md:mb-10 font-semibold text-primary">What our clients say about us</h1>
+        <div className="md:flex justify-center text-secondary">
           {Data.map((item) => {
             return (
               <div id={item.id} key={item.id} className={`review ${isVisible[item.id] ? 'slide' : ''} shadow-lg rounded p-5 m-5`}>

@@ -25,9 +25,16 @@ html{
 }
 
 body {
+  background-color: #eee;
   font-family: 'Roboto';
-  background-color: black;
-  color: antiquewhite;
+}
+
+.text-primary {
+  color: #0099ff;
+}
+
+.text-secondary {
+  color: #064163;
 }
 
 p {
@@ -92,18 +99,24 @@ p {
 }
 
 .cta-btn {  
-  background: linear-gradient(to right, #ff652f, #ff9f1c);
-  transition: all 4s ease-in-out;
-  transition: transform 0.5s ease-in-out;
+  background: #0099ff;
+  transition: all 0.2s ease-in-out;
+  color: #fff;
 }
 
 .cta-btn.jumping {
   animation: jump 1s ease-in-out;
 }
 
+#services {
+  background: rgb(12, 42, 66);
+}
+
 .review {
   opacity: 0;
   transition: all .5s ease-in-out;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.404);
 }
 
 .card {
@@ -171,7 +184,8 @@ p {
 
 #main {
   height: 100vh;
-  background: url('../images/classroom-interior.webp') no-repeat center center/cover;
+  background: url('../images/hero-bg.svg') no-repeat center/cover;
+  background-position: 90%;
 }
 
 .dark-overlay {
@@ -185,12 +199,8 @@ p {
 }
 
 .cta-btn:hover {
-  transform: translateY(-10px);
-  box-shadow: #d4cfcf25 0px 10px 20px 1px;
-}
-
-.card, .review {
-  background: #ffffff15;
+  transform: translateY(-10px) !important;
+  box-shadow: #0099ff63 0px 10px 20px 1px;
 }
 
 .card img {
@@ -203,17 +213,21 @@ p {
   height: 100%;
 }
 
-.text-orange {
-  background: -webkit-linear-gradient(orange, #e05808);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .bg-price {
   background: goldenrod;
 }
 
+#contact, footer, #our-team {
+  background: steelblue;
+  color: white;
+}
+
+
+
 @media (min-width: 768px) {
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
   .nav {
     display: flex;
     justify-content: space-between;
@@ -252,7 +266,6 @@ p {
 
   .card {
     padding: 50px 10%;
-    background: #ffffff15;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }

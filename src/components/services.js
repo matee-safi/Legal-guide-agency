@@ -35,9 +35,9 @@ const Services = () => {
   };
 
   return (
-    <section id="services">
+    <section id="services" className="text-white">
       <div className='services-container p-3'>
-        <h1 className="text-4xl text-center p-10 md:text-5xl font-semibold">Our Packages</h1>
+        <h1 className="text-4xl text-center p-10 md:text-5xl font-semibold">Our Services</h1>
         {Data.map((item) => (
           <div
             key={item.id}
@@ -77,7 +77,7 @@ const Services = () => {
           <div
             key={item.id}
             id={item.id}
-            className={`card ${isVisible[item.id] ? 'slide' : ''} hidden rounded md:bg-black ${
+            className={`card ${isVisible[item.id] ? 'slide' : ''} hidden rounded ${
               index % 2 === 0 ? 'even' : 'odd'
             }`}
           >
@@ -93,7 +93,7 @@ const Services = () => {
             </div>
             <div className="pt-5 requirements">
               <h2 className="text-4xl mb-1">{item.title}</h2>
-              <p className="mb-5 text-2xl text-orange">{item.description}</p>
+              <p className="mb-5 text-2xl">{item.description}</p>
               <h1 className="text-xl">Requirements:</h1>
               {item.requirements.map((requirement) => (
                 <p key={requirement} className=" text-lg">
