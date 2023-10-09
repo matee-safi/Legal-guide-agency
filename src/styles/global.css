@@ -12,22 +12,29 @@ html{
 }
 
 ::-webkit-scrollbar-track {
-  background: #000;
+  background: #d1d1d1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ddd;
+  background: teal;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #c5b9b9;
+  background: rgb(1, 94, 94);
 }
 
 body {
+  background-color: #eee;
   font-family: 'Roboto';
-  background-color: black;
-  color: antiquewhite;
+}
+
+.text-primary {
+  color: #0099ff;
+}
+
+.text-secondary {
+  color: #064163;
 }
 
 p {
@@ -92,36 +99,40 @@ p {
 }
 
 .cta-btn {  
-  background: linear-gradient(to right, #ff652f, #ff9f1c);
-  transition: all 4s ease-in-out;
-  transition: transform 0.5s ease-in-out;
+  background: #0099ff;
+  transition: all 0.2s ease-in-out;
+  color: #fff;
 }
 
 .cta-btn.jumping {
   animation: jump 1s ease-in-out;
 }
 
+#services {
+  background: rgb(12, 42, 66);
+}
+
+#reviews {
+  display: flex;
+  justify-content: center;
+}
+
 .review {
   opacity: 0;
   transition: all .5s ease-in-out;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.404);
 }
 
 .card {
-  opacity: 0;
-  filter: blur(10px);
-  transform: translateX(-100%);
+  max-width: 0;
+  overflow: hidden;
   transition: all .5s ease-in-out;
 }
 
-.card:nth-child(2n) {
-  width: 0;
-  transform: translateX(100%);
-  transition: all 0.5s ease-in-out;
-}
-
 .slide {
+  max-width: 100%;
   width: auto !important;
-  transform: translateX(0) !important;
   opacity: 1 !important;
   filter: blur(0) !important;
 }
@@ -171,7 +182,8 @@ p {
 
 #main {
   height: 100vh;
-  background: url('../images/classroom-interior.webp') no-repeat center center/cover;
+  background: url('../images/hero-bg.svg') no-repeat center/cover;
+  background-position: 90%;
 }
 
 .dark-overlay {
@@ -185,35 +197,25 @@ p {
 }
 
 .cta-btn:hover {
-  transform: translateY(-10px);
-  box-shadow: #d4cfcf25 0px 10px 20px 1px;
-}
-
-.card, .review {
-  background: #ffffff15;
+  transform: translateY(-10px) !important;
+  box-shadow: #0099ff63 0px 10px 20px 1px;
 }
 
 .card img {
   width: 100%;
 }
 
-.video {
-  width: 100%;
-  max-width: 450px;
-  height: 100%;
+.bg-blue {
+  background-color: steelblue;
+  color: white;
 }
 
-.text-orange {
-  background: -webkit-linear-gradient(orange, #e05808);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
-.bg-price {
-  background: goldenrod;
-}
 
 @media (min-width: 768px) {
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
   .nav {
     display: flex;
     justify-content: space-between;
@@ -235,7 +237,7 @@ p {
   }
 
   .nav-menu {
-    justify-content:end;
+    justify-content: end;
     align-items: center;
     padding: 0;
     gap: 2rem;
@@ -248,34 +250,6 @@ p {
 
   .nav-menu a:hover {
     border-bottom: #fff 2px solid;
-  }
-
-  .card {
-    padding: 50px 10%;
-    background: #ffffff15;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .even {
-    grid-template-areas: "details image";
-  }
-
-  .odd {
-    grid-template-areas: "image details";
-  }
-
-  .card img {
-    max-width: 100%;
-    grid-area: image;
-  }
-
-  .card .requirements {
-    grid-area: details;
-  }
-
-  .requirements {
-    padding-left: 2em;
   }
 
   .pop:nth-child(2) {

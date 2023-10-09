@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "fullname": "Karim Ahmadi",
-    "review": "Great service, I got my visa in 2 weeks",
+    "fullname": "Kareem Naderi",
+    "review": "I would recommend Legal Guide to anyone who wants to study abroad, they helped me get into one of the best universities in England",
     "image": "england-client.webp"
   },
   {
     "id": 2,
-    "fullname": "Mutombu Mukalili",
-    "review": "I never thought I'd get this far, thanks to Legal Guide I'm studying at scotland's medical university",
-    "image": "scotland-client.jpg"
+    "fullname": "Jamshed Saafi",
+    "review": "I never thought I'd get this far, thanks to Legal Guide I'm studying at scotland's medical university hoping to get my medical license soon",
+    "image": "scotland-client.webp"
   }
 ]

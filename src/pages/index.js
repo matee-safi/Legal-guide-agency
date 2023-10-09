@@ -15,7 +15,7 @@ import { ElfsightWidget } from 'react-elfsight-widget';
 const IndexPage = () => (
   <>
     <SEOComponent title="Legal Guide" des="We provide scholarships and immigration services for afghan folks looking to work or study abroad in countries like England, Scotland, Belarus...etc" />
-    <section id="main">
+    <section id="main" className="text-white">
       <div className="dark-overlay">
         <Nav />
         <Hero />
@@ -25,10 +25,12 @@ const IndexPage = () => (
     <AboutUs />
     <Services />
     <Reveiws />
-    <OurTeam />
-    {/* <Walkthrough /> */}
-    <Contact />
-    <Footer />
+    <div className="bg-blue">
+      <OurTeam />
+      {/* <Walkthrough /> */}
+      <Contact />
+      <Footer />
+    </div>
   </>
 )
 
