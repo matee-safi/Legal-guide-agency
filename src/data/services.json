@@ -1,42 +1,26 @@
 [
   {
     "id": 1,
-    "name": "England",
-    "title": "England",
-    "description": "Study at Oxford University",
-    "image": "england-library.jpg",
-    "price": "$12000",
-    "requirements": [
-      "IELTS 6.5",
-      "TOEFL 80",
-      "GRE 300",
-      "GMAT 600"
-    ]
+    "title": "Canada",
+    "types": "Education, Business, Tourism",
+    "image": "canada.webp"
   },
   {
     "id": 2,
-    "title": "Scotland",
-    "description": "Study at St. Andrews University",
-    "image": "scotland-university.jpg",
-    "price": "$26000",
-    "requirements": [
-      "IELTS 7.5",
-      "TOEFL 100",
-      "GRE 300",
-      "GMAT 500"
-    ]
+    "title": "England",
+    "types": "Education",
+    "image": "england.webp"
   },
   {
     "id": 3,
+    "title": "Scotland",
+    "types": "Education",
+    "image": "scotland.webp"
+  },
+  {
+    "id": 4,
     "title": "Belarus",
-    "description": "Study at Belarussian state University",
-    "image": "belarus-classroom.jpg",
-    "price": "$6000",
-    "requirements": [
-      "IELTS 6.5",
-      "TOEFL 80",
-      "GRE 300",
-      "GMAT 600"
-    ]
+    "types": "Education",
+    "image": "belarus.webp"
   }
 ]

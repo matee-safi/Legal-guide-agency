@@ -25,10 +25,12 @@ const IndexPage = () => (
     <AboutUs />
     <Services />
     <Reveiws />
-    <OurTeam />
-    {/* <Walkthrough /> */}
-    <Contact />
-    <Footer />
+    <div className="bg-blue">
+      <OurTeam />
+      {/* <Walkthrough /> */}
+      <Contact />
+      <Footer />
+    </div>
   </>
 )
 

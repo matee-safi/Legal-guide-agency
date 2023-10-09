@@ -12,16 +12,16 @@ html{
 }
 
 ::-webkit-scrollbar-track {
-  background: #000;
+  background: #d1d1d1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ddd;
+  background: teal;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #c5b9b9;
+  background: rgb(1, 94, 94);
 }
 
 body {
@@ -126,12 +126,6 @@ p {
   transition: all .5s ease-in-out;
 }
 
-.card:nth-child(2n) {
-  width: 0;
-  transform: translateX(100%);
-  transition: all 0.5s ease-in-out;
-}
-
 .slide {
   width: auto !important;
   transform: translateX(0) !important;
@@ -207,18 +201,9 @@ p {
   width: 100%;
 }
 
-.video {
-  width: 100%;
-  max-width: 450px;
-  height: 100%;
-}
-
-.bg-price {
-  background: goldenrod;
-}
-
-#contact, footer, #our-team {
-  background: steelblue;
+.bg-blue {
+  background: linear-gradient( steelblue, cornflowerblue);
+  background-color: steelblue;
   color: white;
 }
 
@@ -262,33 +247,6 @@ p {
 
   .nav-menu a:hover {
     border-bottom: #fff 2px solid;
-  }
-
-  .card {
-    padding: 50px 10%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .even {
-    grid-template-areas: "details image";
-  }
-
-  .odd {
-    grid-template-areas: "image details";
-  }
-
-  .card img {
-    max-width: 100%;
-    grid-area: image;
-  }
-
-  .card .requirements {
-    grid-area: details;
-  }
-
-  .requirements {
-    padding-left: 2em;
   }
 
   .pop:nth-child(2) {
