@@ -112,23 +112,27 @@ p {
   background: rgb(12, 42, 66);
 }
 
+#reviews {
+  display: flex;
+  justify-content: center;
+}
+
 .review {
   opacity: 0;
   transition: all .5s ease-in-out;
-  max-width: 500px;
+  max-width: 600px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.404);
 }
 
 .card {
-  opacity: 0;
-  filter: blur(10px);
-  transform: translateX(-100%);
+  max-width: 0;
+  overflow: hidden;
   transition: all .5s ease-in-out;
 }
 
 .slide {
+  max-width: 100%;
   width: auto !important;
-  transform: translateX(0) !important;
   opacity: 1 !important;
   filter: blur(0) !important;
 }
@@ -202,7 +206,6 @@ p {
 }
 
 .bg-blue {
-  background: linear-gradient( steelblue, cornflowerblue);
   background-color: steelblue;
   color: white;
 }
@@ -234,7 +237,7 @@ p {
   }
 
   .nav-menu {
-    justify-content:end;
+    justify-content: end;
     align-items: center;
     padding: 0;
     gap: 2rem;

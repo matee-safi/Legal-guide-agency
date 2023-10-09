@@ -25,7 +25,7 @@ const OurTeam = () => {
     };
   }, []);
 
-  return ( 
+  return (
     <section id="our-team">
       <div className="py-3 mt-10 our-team-container">
         <h1 className="text-4xl md:pb-10 text-center md:text-5xl mt-20">Meet Our Team</h1>

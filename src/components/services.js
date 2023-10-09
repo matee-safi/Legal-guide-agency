@@ -28,18 +28,19 @@ const Services = () => {
 
   return (
     <section id="services" className="text-white">
-      <div className='services-container p-3'>
+      <div className='services-container p-3 pb-'>
         <h1 className="text-4xl text-center p-10 md:text-5xl font-semibold">Our Services</h1>
         <div className="grid md:grid-cols-2">
           {Data.map((item) => (
             <div
             key={item.id}
             id={item.id}
-            className={`card ${isVisible && 'slide'} rounded p-5 my-3 md:text-xl`}
+            className={`card border md:border-none ${isVisible[item.id] ? 'slide' : ''} rounded p-5 backdrop-blur-lg m-3 md:text-xl`}
             >
               <div>
-                <h2 className="text-2xl md:text-3xl text-cesnter font-serif">{item.title} - <small className="font-sans">{item.types}</small></h2>
+                <h2 className="text-2xl md:text-3xl font-serif">{item.title}</h2>
                 <img src={item.image} alt={`${item.title}`} className="rounded my-3" />
+                  <p>{item.types} Visas</p>
               </div>
             </div>
           ))}
