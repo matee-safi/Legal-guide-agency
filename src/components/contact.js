@@ -10,7 +10,7 @@ const Contact = () => {
         <div className="md:grid md:grid-cols-2 md:items-center">
           <div className="px-10">
             <div className="md:text-left md:pr-5 md:mb-10">
-              <h2 className="mb-3 text-xl md:text-3xl font-bold"><StaticImage src="../../static/location.png" className="md:hidden" alt="pin" />Our Location</h2>
+              <h2 className="mb-3 text-xl md:text-3xl font-bold flex items-center justify-center md:justify-start"><StaticImage src="../../static/location.png" alt="pin" className="md:hidden" />Our Location</h2>
               <p className="md:text-lg">Shahre Naw, Haji Yaqoob Square, Beside Golden Star Hotel, Kabul Business Center, 5th Floor Office# 506 & 507, Kabul, Afghanistan</p>
             </div>
             <div className="hidden md:block md:text-left mt-5">

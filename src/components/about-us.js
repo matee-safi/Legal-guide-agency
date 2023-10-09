@@ -37,15 +37,15 @@ const AboutUs = () => {
       observer.disconnect();
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [isJumping]); // Include isJumping in the dependency array to re-run the effect when it changes
+  }, [isJumping]);
 
   return (
     <section id="about" className="about-us md:grid md:grid-cols-2 md:p-20 ">
       <div className="flex flex-col p-3 md:text-xl md:col-6">
         <h2 className="text-bold text-4xl md:text-6xl pb-2 pt-10 md:pb-10">About Us</h2>
-        <p className='pb-3'>Welcome to our scholarship and migration consultancy!</p>
-        <p className='pb-3 md:my-5'>At Legal Guide, we are dedicated to helping you achieve your dreams of studying abroad and exploring global opportunities. Our team of experienced advisors is here to guide you through the entire process, from selecting the right educational institution to securing scholarships and visas.</p>
-        <p className='pb-3 mb-10 font-bold'>Let us help you unlock a world of possibilities.</p>
+        <p className='text-secondary pb-3'>Welcome to our scholarship and migration consultancy!</p>
+        <p className='text-secondary pb-3 md:my-5'>At Legal Guide, we are dedicated to helping you achieve your dreams of studying abroad and exploring global opportunities. Our team of experienced advisors is here to guide you through the entire process, from selecting the right educational institution to securing scholarships and visas.</p>
+        <p className='text-secondary pb-3 mb-10 font-bold'>Let us help you unlock a world of possibilities.</p>
         <a
           id="cta"
           href="#contact"

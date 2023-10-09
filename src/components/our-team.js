@@ -25,11 +25,11 @@ const OurTeam = () => {
     };
   }, []);
 
-  return ( 
+  return (
     <section id="our-team">
-      <div className="mt-10 our-team-container">
-        <h1 className="text-4xl md:pb-10 text-center md:text-5xl md:mt-20">Meet Our Team</h1>
-        <div className="md:flex justify-center gap-20 my-10 md:text-2xl">
+      <div className="py-3 mt-10 our-team-container">
+        <h1 className="text-4xl md:pb-10 text-center md:text-5xl mt-20">Meet Our Team</h1>
+        <div className="md:flex justify-center gap-20 my-10 md:mt-0 md:text-2xl">
           {Data.map((member) => {
             return (
               <div key={member.id} id={member.id} className={`flex team-member flex-col ${isVisible[member.id] && 'pop'}`}>
