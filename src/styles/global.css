@@ -41,6 +41,25 @@ p {
   font-family: 'Roboto';
 }
 
+.banner-ad {
+  max-height: 100px;
+  position: sticky;
+  top: -100px;
+  z-index: 3;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  transition: top 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.cross {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
 #whatsapp-widget {
   position: fixed;
   bottom: 20px;
@@ -89,6 +108,14 @@ p {
 }
 
 /* ANIMATION */
+.slide-down {
+  top: 0;
+}
+
+.slide-up {
+  top: -100px;
+}
+
 @keyframes jump {
   0%, 100% {
     transform: translateY(0);
@@ -120,7 +147,7 @@ p {
 .review {
   opacity: 0;
   transition: all .5s ease-in-out;
-  max-width: 600px;
+  max-width: 500px !important;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.404);
 }
 
@@ -170,19 +197,17 @@ p {
   z-index: 1;
   width: 100%;
   height: 0;
-  top: 0;
-  right: 0;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
 }
 
 .open-menu{
-  height: 100vh;
+  height: fit-content;
 }
 
 #main {
   height: 100vh;
-  background: url('../images/hero-bg.svg') no-repeat center/cover;
+  background: url('../images/hero-bg.webp') no-repeat center/cover;
   background-position: 90%;
 }
 
