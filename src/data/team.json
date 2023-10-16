@@ -3,18 +3,18 @@
     "id": "1",
     "name": "Noor Muhammad",
     "role": "Founder/CEO",
-    "image": "profile-placeholder.png"
+    "image": "noor 2.png"
   },
   {
     "id": "2",
     "name": "Tameem Sofiekhel",
     "role": "CMO",
-    "image": "profile-placeholder.png"
+    "image": "tamo.jpeg"
   },
   {
     "id": "3",
-    "name": "John doe",
-    "role": "Advisor",
-    "image": "profile-placeholder.png"
+    "name": "Ahmad Walid",
+    "role": "Customer Support",
+    "image": "ahmad_walid.png"
   }
 ]
