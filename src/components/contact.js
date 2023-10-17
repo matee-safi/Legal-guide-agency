@@ -13,7 +13,7 @@ const Contact = () => {
             <a href="https://www.facebook.com/legalguide.edu" target="_blank" rel="noreferrer"><StaticImage src="../../static/facebook.png" alt="facebook icon" /></a>
             <a href="https://www.instagram.com/legalguideconsultancy/" target="_blank" rel="noreferrer"><StaticImage className="hover:scale-125 transition" src="../../static/instagram.png" alt="instagram icon" /></a>
             <a href="mailto:legalguide.edu@gmail.com" target="_blank" rel="noreferrer"><StaticImage src="../../static/email.png" alt="gmail icon" /></a>
-            <a href="https://api.whatsapp.com/send?phone=+93795284210" target="_blank" rel="noreferrer"><StaticImage src="../../static/whatsapp.png" alt="whatsapp icon" /></a>
+            <a href="https://api.whatsapp.com/send?phone=93795284210" target="_blank" rel="noreferrer"><StaticImage src="../../static/whatsapp.png" alt="whatsapp icon" /></a>
           </div>
         </div>
         <div className="md:grid md:grid-cols-2 md:items-center">
@@ -28,7 +28,7 @@ const Contact = () => {
                 <a href="https://www.facebook.com/legalguide.edu" target="_blank" rel="noreferrer"><StaticImage className="hover:scale-125 transition" src="../../static/facebook.png" alt="facebook icon" /></a>
                 <a href="https://www.instagram.com/legalguideconsultancy/" target="_blank" rel="noreferrer"><StaticImage className="hover:scale-125 transition" src="../../static/instagram.png" alt="instagram icon" /></a>
                 <a href="mailto:legalguide.edu@gmail.com" target="_blank" rel="noreferrer"><StaticImage className="hover:scale-125 transition" src="../../static/email.png" alt="gmail icon" /></a>
-                <a href="https://api.whatsapp.com/send?phone=+93795284210" target="_blank" rel="noreferrer"><StaticImage className="hover:scale-125 transition" src="../../static/whatsapp.png" alt="whatsapp icon" /></a>
+                <a href="https://api.whatsapp.com/send?phone=93795284210" target="_blank" rel="noreferrer"><StaticImage className="hover:scale-125 transition" src="../../static/whatsapp.png" alt="whatsapp icon" /></a>
               </div>
             </div>
           </div>

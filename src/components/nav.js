@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <header>
       <nav className="nav flex">
-        <Link to="/" className="p-2 cursor-pointer">
+        <Link to="/" className="px-7 py-4 cursor-pointer">
           <StaticImage src="../images/logo.png" alt="Logo" />
         </Link>
       </nav>

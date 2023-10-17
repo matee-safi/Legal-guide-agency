@@ -3,18 +3,18 @@
     "id": "1",
     "name": "Noor Muhammad",
     "role": "Founder/CEO",
-    "image": "noor 2.png"
+    "image": "noor.webp"
   },
   {
     "id": "2",
     "name": "Tameem Sofiekhel",
     "role": "CMO",
-    "image": "tamo.jpeg"
+    "image": "tameem.webp"
   },
   {
     "id": "3",
     "name": "Ahmad Walid",
     "role": "Customer Support",
-    "image": "ahmad_walid.png"
+    "image": "ahmad_walid.webp"
   }
 ]
