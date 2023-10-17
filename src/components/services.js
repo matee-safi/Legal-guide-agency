@@ -29,7 +29,7 @@ const Services = () => {
   return (
     <section id="services" className="text-white">
       <div className='services-container p-3 pb-'>
-        <h1 className="text-4xl text-center p-10 md:text-5xl font-semibold">Our Services</h1>
+        <h1 className="text-4xl text-center p-10 md:text-5xl font-semibold">Our Packages</h1>
         <div className="grid md:grid-cols-2">
           {Data.map((item) => (
             <div

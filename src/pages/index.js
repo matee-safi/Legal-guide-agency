@@ -1,5 +1,6 @@
 import * as React from "react"
 import '../styles/global.css';
+import BannerAd from "../components/banner-ad";
 import SEOComponent from "../components/SEO";
 import Nav from "../components/nav"
 import Hero from "../components/hero";
@@ -15,6 +16,7 @@ import { ElfsightWidget } from 'react-elfsight-widget';
 const IndexPage = () => (
   <>
     <SEOComponent title="Legal Guide" des="We provide scholarships and immigration services for afghan folks looking to work or study abroad in countries like England, Scotland, Belarus...etc" />
+    <BannerAd />
     <section id="main" className="text-white">
       <div className="dark-overlay">
         <Nav />
