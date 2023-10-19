@@ -2,19 +2,29 @@ import React, { useEffect, useState } from "react";
 
 const BannerAd = () => {
   const [showBanner, setShowBanner] = useState(false);
+  const [slideBanner, setSlideBanner] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setShowBanner(true);
-    }, 15000);
+    }, 10000);
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setSlideBanner(true);
+    }, 11000);
   }, []);
 
   const handleCloseBanner = () => {
-    setShowBanner(false);
+    setTimeout(() => {
+      setShowBanner(false);
+    }, 500);
+    setSlideBanner(false);
   };
 
   return (
-    <div className={`banner-ad ${showBanner ? 'slide-down' : 'slide-up'}`}>
+    <div className={`banner-ad ${showBanner ? 'show' : ''} ${slideBanner ? 'slide-down' : 'slide-up'}`}>
       <div className="flex justify-center border-gray-200 py-5 px-8">
         <h2 className="text-xl font-bold leading-8">
           Join our upcoming German class! Enroll via WhatsApp now!
