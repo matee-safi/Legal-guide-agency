@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import favicon from '../images/mortarboard.png';
+import favicon from '../images/favicon.png';
 
 const SiteMetadata = ({ pathname, locale, title, des }) => {
   return (
@@ -20,7 +20,7 @@ const SiteMetadata = ({ pathname, locale, title, des }) => {
       <meta property="og:locale" content={locale} />
       <meta property="og:site_name" content={des} />
     </Helmet>
-   );
+  );
 }
- 
+
 export default SiteMetadata;

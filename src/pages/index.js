@@ -15,7 +15,7 @@ import { ElfsightWidget } from 'react-elfsight-widget';
 
 const IndexPage = () => (
   <>
-    <SEOComponent title="Legal Guide" des="We provide scholarships and immigration services for afghan folks looking to work or study abroad in countries like England, Scotland, Belarus...etc" />
+    <SEOComponent title="Legal Guide" des="We provide scholarships and immigration services for afghan folks looking to work, study or conduct business in countries like Canada, England, Scotland, Belarus...etc" />
     <BannerAd />
     <section id="main" className="text-white">
       <div className="dark-overlay">
