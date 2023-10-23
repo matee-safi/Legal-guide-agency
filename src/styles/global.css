@@ -42,15 +42,19 @@ p {
 }
 
 .banner-ad {
-  max-height: 100px;
+  display: none;
   position: sticky;
   top: -100px;
   z-index: 3;
-  background-color: orange;
+  background-color: #582D63;
   color: white;
   text-align: center;
   transition: top 0.5s ease-in-out;
   overflow: hidden;
+}
+
+.show {
+  display: block;
 }
 
 .cross {
@@ -104,6 +108,22 @@ p {
   justify-content: center;
 }
 
+#services h1 {
+  background: url("https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc34c7d51595b4e9ca53745_path-5185.svg") no-repeat center;
+  background-size: 100% 100%;
+  padding: 20px 0;
+}
+
+.bg-vector {
+  position: absolute;
+  z-index: 0;
+}
+
+#vector2 {
+  right: 0;
+  opacity: 0.5;
+}
+
 .review {
   opacity: 0;
   transition: all .5s ease-in-out;
@@ -112,13 +132,13 @@ p {
 }
 
 .card {
-  max-width: 0;
+  transform: rotateY(90deg);
   overflow: hidden;
   transition: all .5s ease-in-out;
 }
 
 .slide {
-  max-width: 100%;
+  transform: rotateY(0deg);
   width: auto !important;
   opacity: 1 !important;
   filter: blur(0) !important;
@@ -168,6 +188,10 @@ p {
 @media (min-width: 768px) {
   .dark-overlay {
     background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  #services h1 {
+    background-size: auto;
   }
 
   .pop:nth-child(2) {

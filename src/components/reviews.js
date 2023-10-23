@@ -33,7 +33,7 @@ const Reveiws = () => {
         <div className="md:flex justify-center text-secondary">
           {Data.map((item) => {
             return (
-              <div id={item.id} key={item.id} className={`review ${isVisible[item.id] ? 'slide' : ''} shadow-lg rounded p-5 m-5`}>
+              <div id={item.id} key={item.id} className={`review ${isVisible[item.id] ? 'slide' : ''} shadow-lg rounded p-5 mx-10 my-5`}>
                 <div className="flex justify-between items-center">
                   <h2 className="text-2xl md:text-3xl mb-3">{item.fullname}</h2>
                   <img src={quote} alt="double-quotes" />
