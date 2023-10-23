@@ -2,11 +2,11 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const Contact = () => {
-  return ( 
+  return (
     <section id="contact">
       <div className="contact-section p-5 py-10 text-center">
-        <h2 className="text-xl mb-2 font-bold md:text-3xl">What are you waiting for?</h2>
-        <p className="mb-10 md:text-lg">Reach out to us through our socials or come to our office, we'll get you set up in no time!</p>
+        <h2 className="text-xl mb-2 font-bold md:text-3xl relative z-10">What are you waiting for?</h2>
+        <p className="mb-10 md:text-lg z-10 relative">Reach out to us through our socials or come to our office, we'll get you set up in no time!</p>
         <div className="md:hidden mb-10">
           <h2 className="mb-3 text-xl font-bold">Contact Us</h2>
           <div className="flex justify-center gap-5">
