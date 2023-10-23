@@ -45,7 +45,6 @@ p {
   display: none;
   position: sticky;
   top: -100px;
-  z-index: 3;
   background-color: #582D63;
   color: white;
   text-align: center;
