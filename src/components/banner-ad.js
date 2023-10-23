@@ -24,7 +24,7 @@ const BannerAd = () => {
   };
 
   return (
-    <div className={`banner-ad ${showBanner ? 'show' : ''} ${slideBanner ? 'slide-down' : 'slide-up'}`}>
+    <div className={`banner-ad ${showBanner ? 'show' : ''} ${slideBanner ? 'slide-down' : 'slide-up'} z-50`}>
       <div className="flex justify-center border-gray-200 py-3 md:py-5 px-8">
         <h2 className="text-xl font-bold leading-8">
           🇩🇪 Join our upcoming German class! Enroll via WhatsApp Now!
